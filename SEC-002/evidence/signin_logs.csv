@@ -1,0 +1,9 @@
+Timestamp,User,IPAddress,Location,Application,Result,MFA,Device,RiskLevel
+2026-10-04T06:51:12Z,daniel.okafor@northstar.local,102.89.32.14,"Lagos, NG",Microsoft 365,Success,Satisfied,FIN-LAPTOP-07,Low
+2026-10-04T07:02:44Z,daniel.okafor@northstar.local,102.89.32.14,"Lagos, NG",Azure Portal,Success,Satisfied,FIN-LAPTOP-07,Low
+2026-10-04T07:14:03Z,daniel.okafor@northstar.local,185.220.101.34,"Frankfurt, DE",Azure Portal,Failure,Not Satisfied,Unknown,High
+2026-10-04T07:14:19Z,daniel.okafor@northstar.local,185.220.101.34,"Frankfurt, DE",Azure Portal,Failure,Not Satisfied,Unknown,High
+2026-10-04T07:15:02Z,daniel.okafor@northstar.local,185.220.101.34,"Frankfurt, DE",Microsoft 365,Success,Satisfied,Unknown,High
+2026-10-04T07:17:36Z,daniel.okafor@northstar.local,185.220.101.34,"Frankfurt, DE",Azure Portal,Success,Satisfied,Unknown,High
+2026-10-04T07:21:11Z,daniel.okafor@northstar.local,185.220.101.34,"Frankfurt, DE",Azure Key Vault,Success,Satisfied,Unknown,High
+2026-10-04T07:23:49Z,daniel.okafor@northstar.local,102.89.32.14,"Lagos, NG",Microsoft 365,Success,Satisfied,FIN-LAPTOP-07,Low

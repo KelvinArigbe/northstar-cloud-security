@@ -1,0 +1,6 @@
+Timestamp,User,Operation,Target,Result
+2026-10-04T07:18:42Z,daniel.okafor@northstar.local,Add service principal credentials,finance-automation-sp,Success
+2026-10-04T07:19:31Z,daniel.okafor@northstar.local,Add member to role,Key Vault Secrets Officer,Success
+2026-10-04T07:20:07Z,daniel.okafor@northstar.local,Update Conditional Access policy,Finance-Admins-MFA,Failure
+2026-10-04T07:21:48Z,daniel.okafor@northstar.local,List Key Vault secrets,kv-northstar-prod,Success
+2026-10-04T07:22:15Z,daniel.okafor@northstar.local,Get Key Vault secret,db-production-password,Success
