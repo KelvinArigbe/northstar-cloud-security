@@ -1,0 +1,8 @@
+Principal,Type,Role,Scope,Reason
+amara.okafor@northstar.local,User,Contributor,/subscriptions/prod-sub,Application developer
+david.adebayo@northstar.local,User,Reader,/subscriptions/prod-sub,Operations monitoring
+finance-api-sp,ServicePrincipal,Owner,/subscriptions/prod-sub,Finance API deployment
+backup-automation-sp,ServicePrincipal,Contributor,/subscriptions/prod-sub,Automated backups
+security-team,Group,Security Admin,/subscriptions/prod-sub,Security operations
+intern-dev@northstar.local,User,Contributor,/subscriptions/prod-sub,Temporary development support
+billing-api-mi,ManagedIdentity,Key Vault Secrets User,/subscriptions/prod-sub/resourceGroups/rg-prod/providers/Microsoft.KeyVault/vaults/kv-prod,Billing API secret retrieval
