@@ -52,3 +52,8 @@ The incident was enabled by inadequate identity lifecycle management and excessi
 ## Lab Note
 
 This case is a controlled security engineering simulation. No production or customer systems were affected.
+
+
+## Simulation and evidence note
+
+This is a fictional cloud-incident scenario. The committed role-assignment CSV and illustrative script are lab artifacts, not exports from a real Azure tenant or proof of live execution. The report's VM, Storage, database, monitoring, and access findings are scenario facts supplied for analysis; detailed raw audit/VM/Storage/database telemetry is not included here. No real users, production resources, or customer records are represented.
