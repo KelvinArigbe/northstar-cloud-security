@@ -144,3 +144,8 @@ A root-level compromise can require recovery from a known-good state rather than
 ## Environment
 
 This investigation was performed as a controlled security engineering simulation. No production infrastructure or real customer systems were affected.
+
+
+## Simulation and evidence note
+
+This is a controlled Linux compromise simulation. The included `auth.log` is synthetic authentication evidence. The report also describes endpoint and process telemetry (secret-file access, SSH-key access, outbound connections, executable hash, and systemd persistence) that is not separately included as raw evidence files in this repository. Treat those details as scenario-provided simulated findings, not independently reproducible observations from the committed `auth.log` alone. No real host or customer system was affected.
