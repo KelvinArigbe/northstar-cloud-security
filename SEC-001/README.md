@@ -59,3 +59,17 @@ Security Architecture Review
 ## Additional implementation boundary
 
 The secure Terraform variant disables public network access to the storage account but does not create a Private Endpoint, subnet integration, or private DNS zone. This is an intentional scope boundary for this review exercise, not a complete working application connectivity design. Before deploying the secure configuration, design and validate the private connectivity path required by the application. The resource names are illustrative and may need to be changed to meet Azure global naming requirements.
+
+
+## Remediation status
+
+| Review item | Current secure Terraform state | Status |
+|---|---|---|
+| Anonymous blob access | Container access set to `private` | Implemented in configuration |
+| Unrestricted inbound management rule | Broad `Allow-Management` rule removed; HTTPS 443 remains | Implemented in configuration |
+| Key Vault purge protection | `purge_protection_enabled = true` | Implemented in configuration |
+| Centralized diagnostic logging | No diagnostic settings or Log Analytics resources in this case's Terraform | Open — not implemented |
+| Storage public network access | `public_network_access_enabled = false` | Implemented in configuration; private endpoint and private DNS path remain open |
+| Storage resilience | Replication remains LRS | RPO/RTO review remains open |
+
+The CI workflow checks Terraform formatting and runs `terraform validate` for both variants. It does not run `terraform plan` against a subscription or deploy resources. A successful validation is a syntax/provider-schema check, not deployment evidence.
