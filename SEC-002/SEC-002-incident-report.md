@@ -70,3 +70,8 @@ MFA satisfaction alone does not prove that authentication was legitimate.
 Incident containment must address both the initially compromised identity and any persistence mechanisms established after compromise.
 
 Sensitive credentials retrieved during unauthorized access must be treated as compromised even after the attacker's original access path has been revoked.
+
+
+## Simulation and evidence note
+
+This is a synthetic incident-response exercise. The identities, tenant domain, timestamps, sign-in events, audit events, and business context are fictional lab data. The CSV files are the supplied evidence for this scenario. The report's conclusions are investigative interpretations of those records, not findings from a real Northstar tenant or a live Microsoft Entra environment. No real user accounts or credentials are represented.
