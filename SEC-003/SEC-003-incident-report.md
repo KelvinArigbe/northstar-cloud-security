@@ -73,7 +73,7 @@ Telemetry showed the suspicious executable:
 
 - Accessed `/etc/northstar-api/app.env`
 - Accessed `/home/deploy/.ssh/id_ed25519`
-- Established a connection to `45.77.89.12:443`
+- Established a connection to `198.51.100.12:443`
 - Created `/etc/systemd/system/system-update.service`
 - Enabled the new systemd service
 - Started the service
