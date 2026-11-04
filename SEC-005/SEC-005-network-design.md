@@ -97,3 +97,8 @@ The redesigned architecture reduces public exposure, improves segmentation, limi
 ## Lab Note
 
 This case is a controlled cloud security engineering simulation. No production or customer systems were affected.
+
+
+## Implementation boundary
+
+This is a proposed network design in Markdown, not a deployed Azure network. The diagram and rules describe intended traffic flows. No VNet, subnets, Application Gateway/WAF, Bastion, Private Endpoints, private DNS zones, UDRs, or NSG Terraform configuration for this target architecture are included in this case. Validate service dependencies, routing, DNS, and operational requirements before implementing it.
