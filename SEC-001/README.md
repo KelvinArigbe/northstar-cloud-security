@@ -54,3 +54,8 @@ No Azure resources were deployed as part of this lab.
 Azure Security • Terraform • Infrastructure as Code • Network Security •
 Azure Storage Security • Azure Key Vault • Defense in Depth • Least Privilege •
 Security Architecture Review
+
+
+## Additional implementation boundary
+
+The secure Terraform variant disables public network access to the storage account but does not create a Private Endpoint, subnet integration, or private DNS zone. This is an intentional scope boundary for this review exercise, not a complete working application connectivity design. Before deploying the secure configuration, design and validate the private connectivity path required by the application. The resource names are illustrative and may need to be changed to meet Azure global naming requirements.
