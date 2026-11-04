@@ -1,0 +1,41 @@
+name: Northstar Terraform Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v4.0.1
+        with:
+          terraform_wrapper: false
+
+      - name: Check Terraform formatting
+        run: terraform fmt -check -recursive SEC-001
+
+      - name: Initialize insecure baseline (no backend)
+        working-directory: SEC-001/insecure
+        run: terraform init -backend=false -input=false
+
+      - name: Validate insecure baseline
+        working-directory: SEC-001/insecure
+        run: terraform validate -no-color
+
+      - name: Initialize secure configuration (no backend)
+        working-directory: SEC-001/secure
+        run: terraform init -backend=false -input=false
+
+      - name: Validate secure configuration
+        working-directory: SEC-001/secure
+        run: terraform validate -no-color
