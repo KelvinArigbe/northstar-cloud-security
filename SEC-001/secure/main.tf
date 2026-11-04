@@ -11,6 +11,8 @@ provider "azurerm" {
   features {}
 }
 
+data "azurerm_client_config" "current" {}
+
 resource "azurerm_resource_group" "northstar_prod" {
   name     = "rg-northstar-prod"
   location = "West Europe"
@@ -53,7 +55,7 @@ resource "azurerm_key_vault" "production" {
   name                = "kv-northstar-prod"
   location            = azurerm_resource_group.northstar_prod.location
   resource_group_name = azurerm_resource_group.northstar_prod.name
-  tenant_id           = "00000000-0000-0000-0000-000000000000"
+  tenant_id           = data.azurerm_client_config.current.tenant_id
   sku_name            = "standard"
 
   purge_protection_enabled = true
