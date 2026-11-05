@@ -1,3 +1,5 @@
+![GitHub Actions](https://github.com/KelvinArigbe/northstar-cloud-security/actions/workflows/validate.yml/badge.svg?branch=main)
+
 # Northstar Cloud Security — Engineering Case Studies
 
 A portfolio of Azure cloud-security engineering exercises covering infrastructure security reviews, identity compromise investigations, Linux workload compromise, excessive privilege, and secure network design.
